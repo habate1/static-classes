@@ -8,14 +8,14 @@ public class NameFormatter {
     }
     // NameFormatter.format(...).
     public static String format(String firstName, String lastName) {
-        return NameFormatter.format(firstName, lastName);
+        return lastName + ", " + firstName;
 
     }
     public static String format(String prefix, String firstName, String middleName, String lastName, String suffix) {
-        return NameFormatter.format(prefix, firstName, middleName, lastName, suffix);
+        return lastName + ", " + prefix + " " + firstName + " " + middleName + ", " + suffix;
     }
     public static String format(String fullName) {
-        return NameFormatter.format(fullName);
+        return fullName;
 
     }
 }
